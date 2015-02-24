@@ -1,19 +1,30 @@
+
 #include <Windows.h>
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-// GLOBAL VARIABLE
-const int rows = 3 + 2, colls = 4 + 2;
-int matrix_info[rows][colls] = { 0 };
-double matrix_values[rows][colls] = { 0 };
-double R[3] = { 0.1, 0.8, 0.1 };
-double step = -3;
-int cell[2] = { -1 };
+// GLOBAL CONSTANT - DEFINITIONS
+const int rows = 3 + 2;
+const int colls = 4 + 2;
 
-// FUNCTIONS
-bool matrix_find_computed_cell(int(&cell)[2]);
-void calculate_cell(int cell[2]);
+// GLOBAL VARIABLES - EXTERN DECLARATIONS
+extern double	matrix_info[][colls];
+extern double matrix_values[][colls];
+extern double way_probability[];
+extern double	R;
+extern int		cell[];
+
+// FUNCITONS
+bool matrix_find_computed_cell(int (&cell)[2]);
+void calculate_cell(int (&cell)[2]);
 void restore_matrix_info();
-void print_matrix(double matrix[rows][colls]);
+void print_matrix(double (&matrix)[rows][colls]);
+
+/* ***** INFO **** */
+/* CELL IDENTIFIERS IN matrix_info:
+		- 1 .. obsolete cell .. edges, obstacles, absorption cells .. will not be computed
+		  0 .. ordinary cell .. coudl get through it, possible way
+		+ 1 .. cell just computed .. adjecent cells will be computed next time
+ */
