@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main_code.cpp" />
+    <ClCompile Include="sub_codes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_header.h" />
