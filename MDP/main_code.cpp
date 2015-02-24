@@ -31,6 +31,7 @@ void main()
 		}
 
 		restore_matrix_info();
+		system("cls");
 		print_matrix(matrix_values);
 		Sleep(500);
 	}	
