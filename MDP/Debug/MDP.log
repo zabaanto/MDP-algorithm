@@ -1,14 +1,20 @@
-﻿Build started 24. 2. 2015 17:05:42.
+﻿Build started 6. 3. 2015 15:14:29.
      1>Project "E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\MDP\MDP.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main_code.cpp
-         main_code.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt sub_codes.cpp
+         sub_codes.cpp
+     1>e:\dokumenty\cvut\ing\uia 1,2\algoritmy\mdp-algorithm\mdp\main_header.h(22): warning C4459: declaration of 'cell' hides global declaration
+         e:\dokumenty\cvut\ing\uia 1,2\algoritmy\mdp-algorithm\mdp\main_header.h(18): note: see declaration of 'cell'
+     1>e:\dokumenty\cvut\ing\uia 1,2\algoritmy\mdp-algorithm\mdp\main_header.h(23): warning C4459: declaration of 'cell' hides global declaration
+         e:\dokumenty\cvut\ing\uia 1,2\algoritmy\mdp-algorithm\mdp\main_header.h(18): note: see declaration of 'cell'
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.lib" /MACHINE:X86 Debug\main_code.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.lib" /MACHINE:X86 /PROFILE Debug\main_code.obj
          Debug\sub_codes.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/PROFILE' specification
+     1>main_code.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
          MDP.vcxproj -> E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\Debug\MDP.exe
      1>Done Building Project "E:\Dokumenty\CVUT\Ing\UIA 1,2\algoritmy\MDP-algorithm\MDP\MDP.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.70
+Time Elapsed 00:00:05.29
